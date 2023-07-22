@@ -11,8 +11,16 @@ function soloNumeros(array) {
   // soloNumeros([1, 'Henry', 2]) debe retornar [1, 2]
 
   // Tu código aca:
+  // Utilizamos el método filter() para crear un nuevo arreglo con solo los enteros.
+  const soloEnteros = array.filter((elemento) => typeof elemento === "number");
+
+  // Retornamos el nuevo arreglo con solo los enteros.
+  return soloEnteros;
 
 }
+/*const miArreglo = [1, "Henry", 2, "3", true, 4.5];
+const resultado = soloNumeros(miArreglo);
+console.log(resultado); */
 
 // No modifiques nada debajo de esta linea //
 
